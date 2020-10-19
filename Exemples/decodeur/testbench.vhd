@@ -17,7 +17,7 @@ ARCHITECTURE arc OF test IS
 
 BEGIN
 	-- test du décodeur
-	fddDec : ENTITY WORK.decodeur PORT MAP (I0, I1, O0, O1, O2, O3);
+	fddDec : decodeur PORT MAP (I0, I1, O0, O1, O2, O3);
 	I1 <= '0', '1' AFTER 20 ns, 'U' AFTER 40 ns, '0' AFTER 50 ns;
 	I0 <= '0', '1' AFTER 10 ns, '0' AFTER 20 ns, '1' AFTER 30 ns, 'U' AFTER 40 ns, '0' AFTER 50 ns; 
 
