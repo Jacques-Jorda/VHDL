@@ -38,10 +38,6 @@ ARCHITECTURE struct_FA OF full_adder IS
 				C_out	: OUT STD_LOGIC
 				);
 	END COMPONENT half_adder;
-	COMPONENT OR2 IS
-		PORT (e1, e0 : IN STD_LOGIC;
-		      s : OUT STD_LOGIC);
-	END COMPONENT OR2;
 	SIGNAL co1, s1, co2 : STD_LOGIC;
 BEGIN
 	ha1 : half_adder 
